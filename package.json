@@ -17,7 +17,8 @@
     "release:alpha": "standard-version --prerelease alpha",
     "release:beta": "standard-version --prerelease beta",
     "release:rc": "standard-version --prerelease rc",
-    "release:canary": "standard-version --prerelease canary --skip.tag=true --skip.commit=true"
+    "release:canary": "standard-version --prerelease canary --skip.tag=true --skip.commit=true",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.5.13"
@@ -29,6 +30,8 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.25.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "standard-version": "^9.5.0",
     "typescript": "~5.7.2",
     "unocss": "66.1.0-beta.12",
@@ -45,5 +48,10 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,json,css,scss,md,less}": [
+      "eslint --fix"
+    ]
   }
 }
