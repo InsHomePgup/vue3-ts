@@ -18,7 +18,7 @@
     "release:beta": "standard-version --prerelease beta",
     "release:rc": "standard-version --prerelease rc",
     "release:canary": "standard-version --prerelease canary --skip.tag=true --skip.commit=true",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "vue": "^3.5.13"
@@ -51,7 +51,7 @@
   },
   "lint-staged": {
     "*.{js,ts,vue,json,css,scss,md,less}": [
-      "eslint --fix"
+      "eslint . --fix"
     ]
   }
 }
