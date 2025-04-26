@@ -5,6 +5,7 @@
 <template>
   <div>
     Hello World
+    <div>Hello Vue</div>
   </div>
 </template>
 
