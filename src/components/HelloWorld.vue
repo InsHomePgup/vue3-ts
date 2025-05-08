@@ -5,7 +5,7 @@ const count = ref(0)
 <template>
   <div>
     123 {{ count }}
-      test
+    test
   </div>
 </template>
 
