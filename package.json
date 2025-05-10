@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint",
     "lint:fix": "eslint . --fix",
-    "commit": "eslint . --fix && cz --no-verify",
+    "commit": "git add . && eslint . --fix && cz --no-verify",
     "release": "standard-version",
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
@@ -24,18 +24,18 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.12.0",
-    "@vitejs/plugin-vue": "^5.2.3",
+    "@antfu/eslint-config": "^4.13.0",
+    "@vitejs/plugin-vue": "^5.2.4",
     "@vue/tsconfig": "^0.7.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.26.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.1",
+    "lint-staged": "^15.5.2",
     "standard-version": "^9.5.0",
     "typescript": "~5.8.3",
-    "unocss": "66.1.0",
-    "vite": "^6.3.4",
+    "unocss": "66.1.1",
+    "vite": "^6.3.5",
     "vue-tsc": "^2.2.10"
   },
   "standard-version": {
