@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1-beta.0](https://github.com/InsHomePgup/vue3-ts/compare/v0.3.0...v0.3.1-beta.0) (2025-05-27)
+
+
+### Features
+
+* - ([c412d18](https://github.com/InsHomePgup/vue3-ts/commit/c412d181bea08842078e1c724b8489ef41becd44))
+* **test:** test ([f5ac0fa](https://github.com/InsHomePgup/vue3-ts/commit/f5ac0fa089095b13ed17666ec00cfff33ddc42ac))
+* wrap commit msg test ([55f9d07](https://github.com/InsHomePgup/vue3-ts/commit/55f9d07c83a9a6fcb624a7fb1e712e9a779354a9))
+
 ## [0.3.0](https://github.com/InsHomePgup/vue3-ts/compare/v0.2.0...v0.3.0) (2025-04-28)
 
 
