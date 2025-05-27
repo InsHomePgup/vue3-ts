@@ -7,6 +7,7 @@
     Hello World
     <div>Hello Vue</div>
     <div>Hello</div>
+    <t-button>Button</t-button>
   </div>
 </template>
 
