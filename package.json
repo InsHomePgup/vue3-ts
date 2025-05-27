@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint",
     "lint:fix": "eslint . --fix",
-    "commit": "git add . && eslint . --fix && cz --no-verify",
+    "commit": "git add . && eslint . --fix && git add . &&  cz --no-verify",
     "release": "standard-version",
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
