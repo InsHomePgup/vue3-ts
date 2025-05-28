@@ -1,16 +1,14 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div>
-    Hello World
-    <div>Hello Vue</div>
-    <div>Hello</div>
-    <t-button>Button</t-button>
-  </div>
+  <t-config-provider>
+    <router-view />
+  </t-config-provider>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+</script>
 
+<style lang="less" scoped>
+#nprogress .bar {
+    background: var(--td-brand-color) !important;
+}
 </style>
