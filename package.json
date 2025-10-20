@@ -24,18 +24,18 @@
     "vue": "^3.5.22"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.4.1",
+    "@antfu/eslint-config": "^6.0.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.37.0",
+    "eslint": "^9.38.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.4",
     "standard-version": "^9.5.0",
     "typescript": "~5.9.3",
-    "unocss": "66.5.3",
-    "vite": "^7.1.9",
+    "unocss": "66.5.4",
+    "vite": "^7.1.10",
     "vue-tsc": "^3.1.1"
   },
   "standard-version": {
