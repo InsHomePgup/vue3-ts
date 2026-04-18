@@ -10,31 +10,32 @@
     "lint": "eslint",
     "lint:fix": "eslint . --fix",
     "commit": "git add . && eslint . --fix && git add . && git commit",
-    "release": "changelogen --release",
-    "release:patch": "changelogen --release --patch",
-    "release:minor": "changelogen --release --minor",
-    "release:major": "changelogen --release --major",
-    "release:alpha": "changelogen --release --prerelease alpha",
-    "release:beta": "changelogen --release --prerelease beta",
-    "release:rc": "changelogen --release --prerelease rc",
-    "release:canary": "changelogen --release --prerelease canary --no-commit --no-tag",
+    "release": "changelogen --release --no-github",
+    "release:patch": "changelogen --release --patch --no-github",
+    "release:minor": "changelogen --release --minor --no-github",
+    "release:major": "changelogen --release --major --no-github",
+    "release:alpha": "changelogen --release --prerelease alpha --no-github",
+    "release:beta": "changelogen --release --prerelease beta --no-github",
+    "release:rc": "changelogen --release --prerelease rc --no-github",
+    "release:canary": "changelogen --release --prerelease canary --no-commit --no-tag --no-github",
     "prepare": "husky"
   },
   "dependencies": {
-    "vue": "^3.5.30"
+    "vue": "^3.5.32"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.7.2",
-    "@vitejs/plugin-vue": "^6.0.5",
-    "@vue/tsconfig": "^0.9.0",
+    "@antfu/eslint-config": "^8.2.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
     "changelogen": "^0.6.2",
-    "eslint": "^10.0.3",
+    "eslint": "^10.2.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
     "typescript": "~5.9.3",
-    "unocss": "66.6.6",
-    "vite": "^8.0.0",
-    "vue-tsc": "^3.2.5"
+    "unocss": "66.6.8",
+    "vite": "^8.0.8",
+    "vite-plugin-vue-devtools": "^8.1.1",
+    "vue-tsc": "^3.2.6"
   },
   "lint-staged": {
     "*.{js,ts,vue,json,css,scss,md,less}": [
