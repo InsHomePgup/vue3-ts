@@ -9,15 +9,15 @@
     "preview": "vite preview",
     "lint": "eslint",
     "lint:fix": "eslint . --fix",
-    "commit": "git add . && eslint . --fix && git add . &&  cz --no-verify",
-    "release": "standard-version",
-    "release:patch": "standard-version --release-as patch",
-    "release:minor": "standard-version --release-as minor",
-    "release:major": "standard-version --release-as major",
-    "release:alpha": "standard-version --prerelease alpha",
-    "release:beta": "standard-version --prerelease beta",
-    "release:rc": "standard-version --prerelease rc",
-    "release:canary": "standard-version --prerelease canary --skip.tag=true --skip.commit=true",
+    "commit": "git add . && eslint . --fix && git add . && git commit",
+    "release": "changelogen --release",
+    "release:patch": "changelogen --release --patch",
+    "release:minor": "changelogen --release --minor",
+    "release:major": "changelogen --release --major",
+    "release:alpha": "changelogen --release --prerelease alpha",
+    "release:beta": "changelogen --release --prerelease beta",
+    "release:rc": "changelogen --release --prerelease rc",
+    "release:canary": "changelogen --release --prerelease canary --no-commit --no-tag",
     "prepare": "husky"
   },
   "dependencies": {
@@ -27,27 +27,14 @@
     "@antfu/eslint-config": "^7.7.2",
     "@vitejs/plugin-vue": "^6.0.5",
     "@vue/tsconfig": "^0.9.0",
-    "commitizen": "^4.3.1",
-    "cz-conventional-changelog": "^3.3.0",
+    "changelogen": "^0.6.2",
     "eslint": "^10.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "standard-version": "^9.5.0",
     "typescript": "~5.9.3",
     "unocss": "66.6.6",
     "vite": "^8.0.0",
     "vue-tsc": "^3.2.5"
-  },
-  "standard-version": {
-    "scripts": {
-      "postbump": "git add package.json CHANGELOG.md",
-      "postchangelog": "git commit -m \"chore(release): update changelog\""
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "lint-staged": {
     "*.{js,ts,vue,json,css,scss,md,less}": [
